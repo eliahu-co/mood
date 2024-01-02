@@ -21,13 +21,6 @@ const getEntry = async (id) => {
 
 const EntryPage = async ({ params }) => {
   const entry = await getEntry(params.id)
-  const { mood, summary, color, subject, negative } = entry?.analysis
-  const analysisData = [
-    { name: 'Subject', value: subject },
-    { name: 'Summary', value: summary },
-    { name: 'Mood', value: mood },
-    { name: 'Negative', value: negative ? 'True' : 'False' },
-  ]
 
   return (
     <div className="h-full w-full">
