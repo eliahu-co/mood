@@ -10,6 +10,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.29.1",
     "@prisma/client": "^5.7.1",
     "@testing-library/jest-dom": "^6.1.6",
     "@testing-library/react": "^14.1.2",
